@@ -1,0 +1,21 @@
+{
+  "name": "blush-bloom-platform",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build:pages": "npm run build --workspace frontend",
+    "build": "npm run build --workspace frontend && npm run build --workspace backend",
+    "migrate": "npm run db:migrate --workspace backend",
+    "seed": "npm run db:seed --workspace backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
