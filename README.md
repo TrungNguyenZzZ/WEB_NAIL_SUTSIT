@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Blush Bloom Platform
 
 Blush Bloom la mot du an full-stack cho salon lam dep chuyen ve nail, mi va ban san pham cham soc sac dep.
@@ -202,3 +203,6 @@ Neu branch chinh cua ban khong phai `main` hoac `master`, hay sua lai workflow c
 - Chua tich hop cong thanh toan that nhu VNPay/MoMo, nhung da chuan bi san enum va flow de mo rong.
 - Chua co test runner hoac pipeline test tu dong.
 - Minh khong the tu verify bang `npm install`, `npm run build:pages` hay `npm run dev` trong moi truong hien tai vi may hien tai khong co `node`/`npm`, nen buoc runtime can duoc ban chay tren may sau khi da cai Node.js.
+=======
+# WEB_NAIL_SUTSIT
+>>>>>>> fbb6a81a9737550d8e6fd2f10ba091bf8b6f8f2a
