@@ -11,6 +11,7 @@ export const PUBLIC_NAV_ITEMS = [
   { label: "Trang chủ", href: "/" },
   { label: "Dịch vụ", href: "/services" },
   { label: "Sản phẩm", href: "/products" },
+  { label: "API", href: "/api-guide" },
   { label: "Đặt lịch", href: "/booking" },
   { label: "Tài khoản", href: "/account" }
 ];
@@ -138,4 +139,3 @@ export const STATUS_TONES = {
   SHIPPING: "bg-blush/55 text-cocoa",
   DELIVERED: "bg-ink text-white"
 };
-

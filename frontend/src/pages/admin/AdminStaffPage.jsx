@@ -46,7 +46,7 @@ const AdminStaffPage = () => {
     () => [
       { name: "name", label: "Tên nhân viên", placeholder: "Nguyễn Khánh Linh" },
       { name: "phone", label: "Số điện thoại", placeholder: "0909..." },
-      { name: "email", label: "Email", placeholder: "staff@blushbloom.vn" },
+      { name: "email", label: "Email", placeholder: "staff@sutsitnail.vn" },
       { name: "specialties", label: "Chuyên môn", placeholder: "Nail art, Lash lift..." },
       { name: "workingDays", label: "Ngày làm việc", placeholder: "Thứ 2 - Thứ 7" },
       { name: "workingHours", label: "Khung giờ", placeholder: "09:00 - 18:00" },
@@ -146,4 +146,3 @@ const AdminStaffPage = () => {
 };
 
 export default AdminStaffPage;
-

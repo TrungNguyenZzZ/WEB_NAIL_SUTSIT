@@ -15,6 +15,7 @@ import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AuthPage from "./pages/AuthPage";
 import AccountPage from "./pages/AccountPage";
+import ApiGuidePage from "./pages/ApiGuidePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import AdminCatalogPage from "./pages/admin/AdminCatalogPage";
@@ -44,6 +45,7 @@ const AppRoutes = () => (
         <Route index element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/:id" element={<ServiceDetailPage />} />
+        <Route path="/api-guide" element={<ApiGuidePage />} />
         <Route
           path="/booking"
           element={

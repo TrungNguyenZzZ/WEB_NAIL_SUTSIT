@@ -164,7 +164,7 @@ const PublicLayout = () => {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">LiÃªn há»‡</p>
             <p className="mt-3 text-sm text-cocoa/80">12 Nguyá»…n TrÃ£i, Quáº­n 1, TP.HCM</p>
             <p className="mt-2 text-sm text-cocoa/80">0909 000 000</p>
-            <p className="mt-2 text-sm text-cocoa/80">hello@blushbloom.vn</p>
+            <p className="mt-2 text-sm text-cocoa/80">hello@sutsitnail.vn</p>
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">Giá» má»Ÿ cá»­a</p>
