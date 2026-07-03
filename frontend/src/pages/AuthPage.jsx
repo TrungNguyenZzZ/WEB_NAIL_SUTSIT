@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { LockKeyhole, Sparkles, UserPlus } from "lucide-react";
 import { Button, Card, PageHero } from "../components/ui";
@@ -20,8 +20,8 @@ const AuthPage = () => {
     <div className="space-y-8">
       <PageHero
         eyebrow="Welcome back"
-        title="Đăng nhập để đặt lịch, theo dõi lịch hẹn và quản lý đơn hàng."
-        description="Tài khoản giúp bạn lưu lịch sử làm đẹp, giỏ hàng và trạng thái đơn sản phẩm ở cùng một nơi."
+        title="ÄÄƒng nháº­p Ä‘á»ƒ Ä‘áº·t lá»‹ch, theo dÃµi lá»‹ch háº¹n vÃ  quáº£n lÃ½ Ä‘Æ¡n hÃ ng."
+        description="TÃ i khoáº£n giÃºp báº¡n lÆ°u lá»‹ch sá»­ lÃ m Ä‘áº¹p, giá» hÃ ng vÃ  tráº¡ng thÃ¡i Ä‘Æ¡n sáº£n pháº©m á»Ÿ cÃ¹ng má»™t nÆ¡i."
       />
 
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -31,18 +31,18 @@ const AuthPage = () => {
             {[
               {
                 icon: LockKeyhole,
-                title: "Theo dõi lịch hẹn",
-                description: "Xem trạng thái xác nhận, lịch sử đặt lịch và hủy hẹn trong khung thời gian cho phép."
+                title: "Theo dÃµi lá»‹ch háº¹n",
+                description: "Xem tráº¡ng thÃ¡i xÃ¡c nháº­n, lá»‹ch sá»­ Ä‘áº·t lá»‹ch vÃ  há»§y háº¹n trong khung thá»i gian cho phÃ©p."
               },
               {
                 icon: Sparkles,
-                title: "Lưu gu làm đẹp",
-                description: "Dễ dàng quay lại dịch vụ yêu thích hoặc mua lại sản phẩm đã hợp với bạn."
+                title: "LÆ°u gu lÃ m Ä‘áº¹p",
+                description: "Dá»… dÃ ng quay láº¡i dá»‹ch vá»¥ yÃªu thÃ­ch hoáº·c mua láº¡i sáº£n pháº©m Ä‘Ã£ há»£p vá»›i báº¡n."
               },
               {
                 icon: UserPlus,
-                title: "Quản lý đơn hàng",
-                description: "Theo dõi thanh toán, giao hàng và các mã giảm giá đã dùng trước đó."
+                title: "Quáº£n lÃ½ Ä‘Æ¡n hÃ ng",
+                description: "Theo dÃµi thanh toÃ¡n, giao hÃ ng vÃ  cÃ¡c mÃ£ giáº£m giÃ¡ Ä‘Ã£ dÃ¹ng trÆ°á»›c Ä‘Ã³."
               }
             ].map((item) => (
               <div key={item.title} className="rounded-3xl bg-white/10 p-5">
@@ -57,18 +57,18 @@ const AuthPage = () => {
         <Card>
           <div className="flex gap-3">
             <Button variant={mode === "login" ? "primary" : "secondary"} onClick={() => switchMode("login")}>
-              Đăng nhập
+              ÄÄƒng nháº­p
             </Button>
             <Button variant={mode === "register" ? "primary" : "secondary"} onClick={() => switchMode("register")}>
-              Đăng ký
+              ÄÄƒng kÃ½
             </Button>
           </div>
           <div className="mt-6">
-            <h2 className="text-3xl">{mode === "register" ? "Tạo tài khoản mới" : "Đăng nhập tài khoản"}</h2>
+            <h2 className="text-3xl">{mode === "register" ? "Táº¡o tÃ i khoáº£n má»›i" : "ÄÄƒng nháº­p tÃ i khoáº£n"}</h2>
             <p className="mt-3 text-sm leading-7 text-cocoa/80">
               {mode === "register"
-                ? "Điền thông tin cơ bản để bắt đầu đặt lịch và mua sắm trên Blush Bloom."
-                : "Sử dụng email và mật khẩu đã đăng ký để tiếp tục."}
+                ? "Äiá»n thÃ´ng tin cÆ¡ báº£n Ä‘á»ƒ báº¯t Ä‘áº§u Ä‘áº·t lá»‹ch vÃ  mua sáº¯m trÃªn SỤT SỊT NAIL."
+                : "Sá»­ dá»¥ng email vÃ  máº­t kháº©u Ä‘Ã£ Ä‘Äƒng kÃ½ Ä‘á»ƒ tiáº¿p tá»¥c."}
             </p>
           </div>
           <div className="mt-8">
@@ -86,4 +86,5 @@ const AuthPage = () => {
 };
 
 export default AuthPage;
+
 

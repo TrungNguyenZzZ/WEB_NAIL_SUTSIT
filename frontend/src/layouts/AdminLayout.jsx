@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+﻿import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { LayoutDashboard, LogOut } from "lucide-react";
 import { ADMIN_NAV_ITEMS } from "../utils/constants";
 import { Button, cn } from "../components/ui";
@@ -19,12 +19,12 @@ const AdminLayout = () => {
             </div>
             <div>
               <div className="font-display text-2xl">Admin Console</div>
-              <p className="text-sm text-cocoa/75">Blush Bloom</p>
+              <p className="text-sm text-cocoa/75">SỤT SỊT NAIL</p>
             </div>
           </div>
 
           <div className="mt-8 rounded-[28px] bg-petal/80 p-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-cocoa/70">Đăng nhập bởi</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-cocoa/70">ÄÄƒng nháº­p bá»Ÿi</p>
             <div className="mt-3 font-semibold text-ink">{user?.name}</div>
             <div className="text-sm text-cocoa/75">{user?.email}</div>
           </div>
@@ -48,7 +48,7 @@ const AdminLayout = () => {
 
           <div className="mt-8 flex gap-3">
             <Button className="flex-1" variant="secondary" onClick={() => navigate("/")}>
-              Về website
+              Vá» website
             </Button>
             <Button
               className="flex-1 gap-2"
@@ -58,7 +58,7 @@ const AdminLayout = () => {
               }}
             >
               <LogOut className="h-4 w-4" />
-              Đăng xuất
+              ÄÄƒng xuáº¥t
             </Button>
           </div>
         </aside>
@@ -72,4 +72,5 @@ const AdminLayout = () => {
 };
 
 export default AdminLayout;
+
 

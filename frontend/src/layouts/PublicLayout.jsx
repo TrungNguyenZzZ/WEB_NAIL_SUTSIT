@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { Menu, Search, ShoppingBag, UserRound, X } from "lucide-react";
 import { PUBLIC_NAV_ITEMS } from "../utils/constants";
@@ -37,9 +37,9 @@ const PublicLayout = () => {
       <header className="sticky top-0 z-40 border-b border-white/70 bg-white/75 backdrop-blur-xl">
         <div className="container flex items-center justify-between gap-4 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <div className="rounded-full bg-ink px-3 py-2 font-display text-lg text-white">BB</div>
+            <div className="rounded-full bg-ink px-3 py-2 font-display text-lg text-white">SS</div>
             <div>
-              <div className="font-display text-2xl">Blush Bloom</div>
+              <div className="font-display text-2xl">SỤT SỊT NAIL</div>
               <div className="text-xs uppercase tracking-[0.22em] text-cocoa/70">Nail and Lash Studio</div>
             </div>
           </Link>
@@ -70,7 +70,7 @@ const PublicLayout = () => {
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 className="rounded-full border border-rose/10 bg-white/90 py-2 pl-10 pr-4 text-sm outline-none focus:border-rose/30"
-                placeholder="Tìm dịch vụ..."
+                placeholder="TÃ¬m dá»‹ch vá»¥..."
               />
             </form>
             <Button variant="secondary" onClick={() => navigate("/cart")} className="gap-2">
@@ -84,11 +84,11 @@ const PublicLayout = () => {
                   {user.name?.split(" ")[0]}
                 </Button>
                 <Button variant="primary" onClick={handleLogout}>
-                  Đăng xuất
+                  ÄÄƒng xuáº¥t
                 </Button>
               </>
             ) : (
-              <Button onClick={() => navigate("/auth")}>Đăng nhập</Button>
+              <Button onClick={() => navigate("/auth")}>ÄÄƒng nháº­p</Button>
             )}
           </div>
 
@@ -110,7 +110,7 @@ const PublicLayout = () => {
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
                   className="w-full rounded-full border border-rose/10 bg-white py-2 pl-10 pr-4 text-sm outline-none focus:border-rose/30"
-                  placeholder="Tìm dịch vụ..."
+                  placeholder="TÃ¬m dá»‹ch vá»¥..."
                 />
               </form>
               <div className="grid gap-2">
@@ -126,21 +126,21 @@ const PublicLayout = () => {
                 ))}
               </div>
               <div className="rounded-3xl bg-ink p-4 text-white">
-                <p className="text-sm">Giỏ hàng hiện tại</p>
+                <p className="text-sm">Giá» hÃ ng hiá»‡n táº¡i</p>
                 <div className="mt-2 font-display text-2xl">{formatCurrency(cartSummary.subtotal)}</div>
               </div>
               {user ? (
                 <div className="flex gap-3">
                   <Button className="flex-1" variant="secondary" onClick={() => navigate("/account")}>
-                    Tài khoản
+                    TÃ i khoáº£n
                   </Button>
                   <Button className="flex-1" onClick={handleLogout}>
-                    Đăng xuất
+                    ÄÄƒng xuáº¥t
                   </Button>
                 </div>
               ) : (
                 <Button className="w-full" onClick={() => navigate("/auth")}>
-                  Đăng nhập
+                  ÄÄƒng nháº­p
                 </Button>
               )}
             </div>
@@ -155,20 +155,20 @@ const PublicLayout = () => {
       <footer className="border-t border-white/70 bg-white/70">
         <div className="container grid gap-6 py-10 md:grid-cols-3">
           <div>
-            <h3 className="text-2xl">Blush Bloom Studio</h3>
+            <h3 className="text-2xl">SỤT SỊT NAIL</h3>
             <p className="mt-3 text-sm leading-7 text-cocoa/80">
-              Không gian đặt lịch nail, mi và beauty care được thiết kế để nhẹ nhàng, nhanh và thật dễ dùng.
+              KhÃ´ng gian Ä‘áº·t lá»‹ch nail, mi vÃ  beauty care Ä‘Æ°á»£c thiáº¿t káº¿ Ä‘á»ƒ nháº¹ nhÃ ng, nhanh vÃ  tháº­t dá»… dÃ¹ng.
             </p>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">Liên hệ</p>
-            <p className="mt-3 text-sm text-cocoa/80">12 Nguyễn Trãi, Quận 1, TP.HCM</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">LiÃªn há»‡</p>
+            <p className="mt-3 text-sm text-cocoa/80">12 Nguyá»…n TrÃ£i, Quáº­n 1, TP.HCM</p>
             <p className="mt-2 text-sm text-cocoa/80">0909 000 000</p>
             <p className="mt-2 text-sm text-cocoa/80">hello@blushbloom.vn</p>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">Giờ mở cửa</p>
-            <p className="mt-3 text-sm text-cocoa/80">Thứ 2 - Chủ nhật</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cocoa/70">Giá» má»Ÿ cá»­a</p>
+            <p className="mt-3 text-sm text-cocoa/80">Thá»© 2 - Chá»§ nháº­t</p>
             <p className="mt-2 text-sm text-cocoa/80">09:00 - 20:00</p>
             <p className="mt-4 text-xs uppercase tracking-[0.18em] text-cocoa/55">
               Instagram / Facebook / TikTok
@@ -181,4 +181,5 @@ const PublicLayout = () => {
 };
 
 export default PublicLayout;
+
 
